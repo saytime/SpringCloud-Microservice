@@ -3,3 +3,4 @@ microservice-eureka-server/target/
 microservice-parent/target/
 microservice-provider-user/target/
 microservice-provider-movie/target/
+microservice-provider-movie-ribbon/target/
