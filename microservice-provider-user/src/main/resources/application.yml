@@ -1,0 +1,22 @@
+# datasource config  &&  # application name 应用服务名称
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/db_test
+    username: root
+    password: root
+  application:
+      name: microservice-provider-user
+
+# tomcat port
+server:
+  port: 7711
+
+# eureka client config
+eureka:
+  client:
+    service-url:
+      defaultZone: http://admin:123456@localhost:8761/eureka
+#  instance:
+#    prefer-ip-address: true
+# default access the service through spring.application.name, also we can use ip

@@ -1,1 +1,4 @@
 microservice-eureka-server/target/
+.idea/
+microservice-parent/target/
+microservice-provider-user/target/
