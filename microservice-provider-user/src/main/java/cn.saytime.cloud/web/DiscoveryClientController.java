@@ -27,7 +27,6 @@ public class DiscoveryClientController {
 
 	@GetMapping("/eureka-instance")
 	public String serviceUrl() {
-		System.out.println("sss");
 		InstanceInfo instance = this.eurekaClient.getNextServerFromEureka("MICROSERVICE-PROVIDER-USER", false);
 		return instance.getHomePageUrl();
 	}

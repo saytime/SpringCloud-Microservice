@@ -18,5 +18,5 @@ eureka:
     service-url:
       defaultZone: http://admin:123456@localhost:8761/eureka
 #  instance:
-#    prefer-ip-address: true
-# default access the service through spring.application.name, also we can use ip
+#    prefer-ip-address: true   # default access the service through spring.application.name, also we can use ip
+#    instance-id: ${spring.application.name}:${spring.cloud.client.ipAddress}:${spring.application.instance_id:${server.port}}   eureka instance format
