@@ -2,9 +2,7 @@ spring:
   application:
     name: microservice-provider-movie
 server:
-  port: 7721
-user:
-  userServicePath: http://localhost:7711/user/
+  port: 7722
 eureka:
   client:
     healthcheck:
